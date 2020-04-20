@@ -49,7 +49,7 @@ public class SinkToMysql extends RichSinkFunction<Student> {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn?useUnicode=true&characterEncoding=UTF-8", "root", "lxw1993822");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn?useUnicode=true&characterEncoding=UTF-8", "root", "123456");
         } catch (Exception e) {
             System.out.println("-----------mysql get connection has exception , msg = " + e.getMessage());
         }

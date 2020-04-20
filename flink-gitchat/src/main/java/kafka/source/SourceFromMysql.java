@@ -73,7 +73,7 @@ COMMIT;
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn?useUnicode=true&characterEncoding=UTF-8", "root", "lxw1993822");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn?useUnicode=true&characterEncoding=UTF-8", "root", "123456");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
