@@ -39,7 +39,7 @@ public class FlinkKafkaProduceMain {
                             "pv",
                             instant.toString());
                     sourceContext.collect(outline);
-                    Thread.sleep(200);
+                    Thread.sleep(1000);
                 }
             }
 
@@ -48,7 +48,7 @@ public class FlinkKafkaProduceMain {
 
             }
         })
-                .addSink(new FlinkKafkaProducer<>("localhost:9092", "user_behavior", new SimpleStringSchema()))
+                .addSink(new FlinkKafkaProducer<>("localhost:9092", "student", new SimpleStringSchema()))
                 .name("flink-connectors-kafka");
         env.execute("flink kafka connector test");
         Thread.currentThread().join();
