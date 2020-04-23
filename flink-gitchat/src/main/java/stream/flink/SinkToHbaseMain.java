@@ -1,4 +1,4 @@
-package kafka.flink;
+package stream.flink;
 
 import org.apache.flink.addons.hbase.TableInputFormat;
 import org.apache.flink.api.common.functions.FilterFunction;
@@ -23,10 +23,9 @@ import org.apache.hadoop.hbase.mapreduce.TableOutputFormat;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
+import stream.constant.HBaseConstant;
 
 import java.io.IOException;
-
-import static kafka.constant.HBaseConstant.*;
 
 /**
  * @author SeawayLee
@@ -163,11 +162,11 @@ public class SinkToHbaseMain {
         @Override
         public void configure(Configuration params) {
             configuration = HBaseConfiguration.create();
-            configuration.set(HBASE_ZOOKEEPER_QUORUM, "localhost:2181");
-            configuration.set(HBASE_ZOOKEEPER_PROPERTY_CLIENTPORT, "2081");
-            configuration.set(HBASE_RPC_TIMEOUT, "30000");
-            configuration.set(HBASE_CLIENT_OPERATION_TIMEOUT, "30000");
-            configuration.set(HBASE_CLIENT_SCANNER_TIMEOUT_PERIOD, "30000");
+            configuration.set(HBaseConstant.HBASE_ZOOKEEPER_QUORUM, "localhost:2181");
+            configuration.set(HBaseConstant.HBASE_ZOOKEEPER_PROPERTY_CLIENTPORT, "2081");
+            configuration.set(HBaseConstant.HBASE_RPC_TIMEOUT, "30000");
+            configuration.set(HBaseConstant.HBASE_CLIENT_OPERATION_TIMEOUT, "30000");
+            configuration.set(HBaseConstant.HBASE_CLIENT_SCANNER_TIMEOUT_PERIOD, "30000");
         }
 
         @Override

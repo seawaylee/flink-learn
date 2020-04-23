@@ -1,4 +1,4 @@
-package kafka.dto;
+package stream.dto;
 
 import java.util.Map;
 

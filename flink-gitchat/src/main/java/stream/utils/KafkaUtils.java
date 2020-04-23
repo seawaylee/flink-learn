@@ -1,8 +1,8 @@
-package kafka.utils;
+package stream.utils;
 
 import com.alibaba.fastjson.JSON;
-import kafka.dto.Metric;
-import kafka.source.dto.Student;
+import stream.dto.Metric;
+import stream.source.dto.Student;
 import org.apache.flink.shaded.guava18.com.google.common.collect.Maps;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

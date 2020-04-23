@@ -1,7 +1,7 @@
-package kafka.flink;
+package stream.flink;
 
-import kafka.utils.ESSinkUtil;
-import kafka.utils.KafkaUtils;
+import stream.utils.ESSinkUtil;
+import stream.utils.KafkaUtils;
 import org.apache.flink.api.common.functions.RuntimeContext;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;

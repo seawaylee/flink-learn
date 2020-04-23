@@ -1,4 +1,4 @@
-package kafka.constant;
+package stream.constant;
 
 public class HBaseConstant {
 

@@ -1,9 +1,7 @@
-package kafka.flink;
+package stream.flink;
 
-import kafka.source.SourceFromMysql;
+import stream.source.SourceFromMysql;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-
-import java.util.Random;
 
 /**
  * @author SeawayLee

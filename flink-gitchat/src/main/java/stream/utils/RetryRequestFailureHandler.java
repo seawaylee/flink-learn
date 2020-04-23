@@ -1,4 +1,4 @@
-package kafka.utils;
+package stream.utils;
 
 import org.apache.flink.streaming.connectors.elasticsearch.ActionRequestFailureHandler;
 import org.apache.flink.streaming.connectors.elasticsearch.RequestIndexer;

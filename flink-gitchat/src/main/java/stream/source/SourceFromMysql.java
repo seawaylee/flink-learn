@@ -1,6 +1,6 @@
-package kafka.source;
+package stream.source;
 
-import kafka.source.dto.Student;
+import stream.source.dto.Student;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.source.RichSourceFunction;
 

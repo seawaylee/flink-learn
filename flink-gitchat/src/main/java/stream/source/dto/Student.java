@@ -1,4 +1,4 @@
-package kafka.source.dto;
+package stream.source.dto;
 
 /**
  * @author SeawayLee
